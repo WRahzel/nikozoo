@@ -1,0 +1,41 @@
+/**************
+*            *
+*   GLOBAL   *
+*            *
+**************/
+
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+html {
+    overflow-x: hidden;
+
+    background-color: $color--lighter;
+    color: $color--text;
+    font-family: $font--main;
+    font-size: 10px;
+}
+
+
+::selection {
+    color: $color--text;
+    background: $color--main;
+}
+
+::-moz-selection {
+    color: $color--text;
+    background: $color--main;
+}
+
+#floating-image {
+    position: absolute;
+    width: 500px;
+    transform: scaleY(-1);
+    left: -250px;
+    top: -100%;
+}

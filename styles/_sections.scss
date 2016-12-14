@@ -1,0 +1,38 @@
+section {
+    padding-top: 75px;
+
+    p {
+        padding: 20px 0;
+    }
+
+    iframe {
+        display: block;
+        margin: auto;
+    }
+}
+
+.section {
+    &__title {
+        @extend .title1;
+
+        &.right {
+            text-align: right;
+        }
+    }
+
+    &__subtitle {
+        @extend .title2;
+
+        &--2 {
+            @extend .title3;
+        }
+
+        &.right {
+            text-align: right;
+        }
+    }
+}
+
+.sectionContainer {
+    min-height: 100vh;
+}
